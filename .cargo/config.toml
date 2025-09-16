@@ -1,0 +1,14 @@
+[target.'cfg(all())']
+rustflags = ["-C", "linker=dylint-link"]
+
+# For Rust versions 1.74.0 and onward, the following alternative can be used
+# (see https://github.com/rust-lang/cargo/pull/12535):
+# linker = "dylint-link"
+[target.aarch64-apple-darwin]
+linker = "dylint-link"
+
+[target.x86_64-apple-darwin]
+linker = "dylint-link"
+
+[target.x86_64-unknown-linux-gnu]
+linker = "dylint-link"

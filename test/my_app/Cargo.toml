@@ -1,0 +1,10 @@
+[package]
+name = "my_app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+my_functions_lib = { path = "../my_functions_lib" }
+rt_attrs = { path = "../rt_attrs" }
+# 使用 path 关键字依赖本地工作空间中的另一个 crate
+# shape_macros = { path = "../shape_macros" }

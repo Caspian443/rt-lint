@@ -1,0 +1,7 @@
+[package]
+name = "my_functions_lib"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+rt_attrs = { path = "../rt_attrs" }
